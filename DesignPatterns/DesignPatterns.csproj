@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="01 - Creational\1.1 - Abstract Factory\Abstract Factory3\" />
+  </ItemGroup>
+
 </Project>

@@ -11,7 +11,7 @@ namespace DesignPatterns._02___Structural._2._1___Adapter.Adapter___2
             foreach (Aluno aluno in listaAlunos)
             {
                 Console.WriteLine($"Aluno {aluno.Nome} " +
-                         $"- Valor da mensalidade R$ {aluno.Mensalidade}")
+                         $"- Valor da mensalidade R$ {aluno.Mensalidade}");
             }
         }
     }

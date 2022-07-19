@@ -26,7 +26,7 @@ namespace DesignPatterns._01___Creational._1._1___Abstract_Factory.Abstract_Fact
 
             var instance = (IPurchaseProviderFactory)Activator.CreateInstance(factory);
 
-            return instance;c
+            return instance;
         }
     }
 }

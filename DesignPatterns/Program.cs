@@ -1,5 +1,6 @@
 ﻿using System;
 using DesignPatterns._01___Creational._1._4___Builder;
+using DesignPatterns._01___Creational._1._5___Prototype;
 using DesignPatterns.FactoryMethod;
 using ExecucaoAbstractFactory = DesignPatterns.AbstractFactory.ExecucaoAbstractFactory;
 
@@ -17,6 +18,7 @@ namespace DesignPatterns
             Console.WriteLine("2 - Method Factory");
             Console.WriteLine("3 - Singleton");
             Console.WriteLine("10 -  Builder");
+            Console.WriteLine("11 - Prototype");
             Console.WriteLine("------------------------");
             Console.WriteLine("Structural Patterns");
             Console.WriteLine("------------------------");
@@ -68,6 +70,9 @@ namespace DesignPatterns
                     break;
                 case 10:
                     ExecucaoBuilder.Executar();
+                    break;
+                case 11:
+                    ExecucaoPrototype.Executar();
                     break;
             }
 

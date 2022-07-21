@@ -1,11 +1,11 @@
 ﻿namespace DesignPatterns._01___Creational._1._5___Prototype
 {
-    public abstract class Prototype
-    {
-        public abstract Prototype ShallowCopy();
-        public abstract Prototype DeppCopy();
-        public abstract void Debug();
-    }
+    //public abstract class Prototype : IPrototype
+    //{
+    //    public abstract Prototype ShallowCopy();
+    //    public abstract Prototype DeppCopy();
+    //    public abstract void Debug();
+    //}
     public class OrderInfo
     {
         public int Id;
@@ -15,7 +15,7 @@
          this.Id = id;  
         }
     }
-    public class FoodOrder : Prototype
+    public class FoodOrder : IPrototype
     {
         public string customerName;
         public bool isDelivery;
@@ -29,12 +29,7 @@
             orderContents = contents;
             this.info = info;
         }
-        public override Prototype ShallowCopy()
-        {
-            return (Prototype)this.MemberwiseClone();
-        }
-
-        public override Prototype DeppCopy()
+        public  IPrototype DeppCopy()
         {
             FoodOrder clonedOrder = (FoodOrder)this.MemberwiseClone();
             clonedOrder.info = new OrderInfo(this.info.Id);
@@ -42,12 +37,17 @@
             return clonedOrder;
         }
 
-        public override void Debug()
+        public  void Debug()
         {
             System.Console.WriteLine("-----------Prototype Food Order----------");
-            System.Console.WriteLine(this.customerName,this.isDelivery);
-            System.Console.WriteLine("Order contents" + string.Join(",",orderContents));
-            System.Console.WriteLine(this.info.Id);
+            System.Console.WriteLine("\nName: {0} \nDelivery: {1}",this.customerName,this.isDelivery);
+            System.Console.WriteLine("ID: {0}", this.info.Id);
+            System.Console.WriteLine("Order contents" + string.Join(",",orderContents) + "\n");
+        }
+
+        public IPrototype ShallowCopy()
+        {
+           return (FoodOrder)this.MemberwiseClone();
         }
     }
 }

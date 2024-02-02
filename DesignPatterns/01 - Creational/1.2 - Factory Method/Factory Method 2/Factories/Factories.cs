@@ -2,6 +2,7 @@
 
 namespace DesignPatterns._01___Creational._1._2___Factory_Method.Factory_Method_2.Factories
 {
+    //Concrete Creator
     public class UIStudentFactory : StudentFactory
     {
         public override IStudent GetStudent(string studentDept)

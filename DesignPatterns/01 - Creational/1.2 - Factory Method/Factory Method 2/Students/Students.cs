@@ -2,6 +2,7 @@
 
 namespace DesignPatterns._01___Creational._1._2___Factory_Method.Factory_Method_2.Students
 {
+    // Concrete Products
     public class Students
     {
         public class BioStudentFuta : IStudent

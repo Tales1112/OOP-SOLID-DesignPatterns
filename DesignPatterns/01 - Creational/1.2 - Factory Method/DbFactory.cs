@@ -8,7 +8,7 @@ namespace DesignPatterns.FactoryMethod
         // Factory Method
         public abstract DbConnector CreateConnector(string connectionString);
 
-        public static DbFactory Database(DataBase dataBase)
+        public static DbFactory CreateDatabase(DataBase dataBase)
         {
             if(dataBase == DataBase.SqlServer)
                 return new SqlFactory();

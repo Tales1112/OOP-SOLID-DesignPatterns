@@ -2,6 +2,7 @@
 
 namespace DesignPatterns._01___Creational._1._4___Builder
 {
+    //Builder
     public interface IFurnitureInventoryBuilder
     {
         IFurnitureInventoryBuilder AddTitle();

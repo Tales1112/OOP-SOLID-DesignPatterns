@@ -2,6 +2,7 @@
 
 namespace DesignPatterns._01___Creational._1._4___Builder
 {
+    //Directory
     public class InventoryBuilderDirectory
     {
         private IFurnitureInventoryBuilder _builder;
@@ -10,8 +11,6 @@ namespace DesignPatterns._01___Creational._1._4___Builder
         {
             _builder = builder;
         }
-
-
         public void BuildCompleteReport()
         {
             _builder.AddTitle();

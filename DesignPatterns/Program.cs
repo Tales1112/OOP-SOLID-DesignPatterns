@@ -10,6 +10,7 @@ namespace DesignPatterns
     {
         private static void Main()
         {
+            ExecucaoBuilder.Executar();
             Console.WriteLine("Escolha a operação:");
             Console.WriteLine("------------------------");
             Console.WriteLine("Creational Patterns");
@@ -45,7 +46,7 @@ namespace DesignPatterns
                     ExecucaoAbstractFactory.Executar();
                     break;
                 case 2:
-                    ExecucaoFactoryMethod.Executar();
+                    //ExecucaoFactoryMethod.Executar();
                     break;
                 case 3:
                     ExecucaoSingleton.Executar();

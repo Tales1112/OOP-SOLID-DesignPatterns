@@ -24,7 +24,7 @@ namespace DesignPatterns._01___Creational._1._5___Prototype
             Console.WriteLine("      ID#: {0:d}", this.IdInfo.IdNumber);
         }
 
-        public IPrototype DeppCopy()
+        public IPrototype DeepCopy()
         {
             Person clonedPerson = (Person)this.MemberwiseClone();
             clonedPerson.IdInfo = new IdInfo(this.IdInfo.IdNumber);

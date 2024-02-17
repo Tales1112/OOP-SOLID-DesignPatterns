@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace DesignPatterns._01___Creational._1._4___Builder
 {
+    //Concrete Builder
     public class DailyReportBuilder : IFurnitureInventoryBuilder
     {
         private InventoryReport _report;

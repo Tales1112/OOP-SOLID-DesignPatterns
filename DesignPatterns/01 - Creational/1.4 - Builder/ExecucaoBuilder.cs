@@ -16,12 +16,10 @@ namespace DesignPatterns._01___Creational._1._4___Builder
 
             var inventoryBuilder = new DailyReportBuilder(items);
 
-            var fluentReport = inventoryBuilder.AddTitle()
-                                               .AddDimensions()
-                                               .AddLogistics(DateTime.Now)
-                                               .GetDailyReport();
+            var inventoryBuilderDirectory = new InventoryBuilderDirectory(inventoryBuilder);
+            inventoryBuilderDirectory.BuildCompleteReport();
 
-            Console.WriteLine(fluentReport.Debug());
+            Console.WriteLine(inventoryBuilder.GetDailyReport().Debug());
         }
     }
 }

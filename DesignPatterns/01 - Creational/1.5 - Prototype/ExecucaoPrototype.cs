@@ -10,7 +10,7 @@
             savedOrder.Debug();
 
             System.Console.WriteLine("Cloned order: ");
-            FoodOrder clonedOrder = (FoodOrder)savedOrder.DeppCopy();
+            FoodOrder clonedOrder = (FoodOrder)savedOrder.DeepCopy();
             clonedOrder.Debug();
 
             System.Console.WriteLine("Order changes:");

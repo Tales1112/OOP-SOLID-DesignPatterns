@@ -3,7 +3,7 @@
     public interface IPrototype
     {
         public void Debug();
-        public IPrototype DeppCopy();
+        public IPrototype DeepCopy();
         public IPrototype ShallowCopy();
     }
 }

@@ -37,13 +37,4 @@ namespace DesignPatterns._01___Creational._1._5___Prototype
             return (Person) this.MemberwiseClone();
         }
     }
-    public class IdInfo
-    {
-        public int IdNumber;
-
-        public IdInfo(int id)
-        {
-            this.IdNumber = id;
-        }
-    }
 }

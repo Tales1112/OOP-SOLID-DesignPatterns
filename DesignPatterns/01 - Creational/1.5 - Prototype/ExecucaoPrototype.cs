@@ -1,6 +1,8 @@
-﻿namespace DesignPatterns._01___Creational._1._5___Prototype
+﻿using System;
+
+namespace DesignPatterns._01___Creational._1._5___Prototype
 {
-    public  class ExecucaoPrototype
+    public class ExecucaoPrototype
     {
         public static void Executar()
         {
